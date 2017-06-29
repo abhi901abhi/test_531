@@ -13,39 +13,39 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
 
 const appRoutes: Routes = [
     {
-        path:'home',
+        path: 'home',
         component: HomeComponent
     },
     {
-        path:'profile',
+        path: 'profile',
         component: ProfileComponent
     },
     {
-        path:'settings',
+        path: 'settings',
         component: SettingsComponent
     },
     {
-        path:'help',
+        path: 'help',
         component: HelpComponent
     },
     {
-        path:'dashboard',
+        path: 'dashboard',
         component: DashboardComponent
     },
     {
-        path:'api/reports',
-        component: PrimengDatatablesComponent
+        path: 'api/reports',
+        component: DatatableComponent// PrimengDatatablesComponent
     },
     {
-        path:'fileupload',
+        path: 'fileupload',
         component: FileuploadComponent
     },
     {
-        path:'',
+        path: '',
         component: HomeComponent
     }
-    
-  
+
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
